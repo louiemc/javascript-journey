@@ -1,7 +1,7 @@
 "use strict";
 
 // Grab elements to manipulate DOM
-const colorName = document.getElementById("color-name");
+const colorName = document.getElementById("color-name").innerText;
 const changeColorBtn = document.getElementById("change-color-btn");
 
 // Array of colors
@@ -14,5 +14,5 @@ changeColorBtn.addEventListener("click", function () {
   let randomColor = colorArr[randomColorNumber];
   console.log(randomColor);
 
-  colorName.textContent = colorName;
+  colorName.textContent = randomColor;
 });
