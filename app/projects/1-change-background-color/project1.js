@@ -13,4 +13,6 @@ changeColorBtn.addEventListener("click", function () {
   console.log(randomColorNumber);
   let randomColor = colorArr[randomColorNumber];
   console.log(randomColor);
+
+  colorName.textContent = colorName;
 });
